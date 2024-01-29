@@ -43,14 +43,13 @@ def setup1():
     credits_text.hideturtle()
     credits_text.goto(-400, -400)
     credits_text.write("Credits", align="center", font=("Courier", 40, "normal"))
-    
-    turtle.register_shape("settings", "settings.ppm")
 
     settings_text = turtle.Turtle()
-    settings_text.speed(0)
+    settings_text.color("red")
+    settings_text.penup()
+    settings_text.hideturtle()
     settings_text.goto(400, -400)
-    settings_thing1 = "settings"
-    settings_text.shape(settings_thing1)
+    settings_text.write("Settings", align="center", font=("Courier", 40, "normal"))
 
 setup1()
 
